@@ -40,6 +40,26 @@
         margin: 40px;
 
         /* FLEXBOX */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      .el--1 {
+        align-self: flex-end;
+        /* that how u can arrange the items, its good for mobile displaying */
+        order: 2; /* It must be larger than the 1 in el--4, so that its at the end. */
+      }
+
+      .el--4 {
+        align-self: flex-start;
+        order: 1; /* -1->first 0->same place(default), 1->last */
+      }
+
+      .el--5 {
+        /* takes the height of the most tallest element.  el--3 =150px 
+        stretching it the most possible. */
+        align-self: stretch;
       }
     </style>
   </head>
