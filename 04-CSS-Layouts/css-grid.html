@@ -40,6 +40,25 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* first px, then %, then fr , gaps are included in container's width */
+        grid-template-columns: 1fr 1fr 20% 200px;
+
+        /* !! TOTAL FRACTIONS = 2 !! 1 + 1 */
+
+        /* 
+        1000px ;
+        1) 1000-200 = 800;
+        2) !1000 * 20% = 200;
+        3) 1000 - (200+200) = 600; // 200px, 20% or 1000
+        4) 1 FR = 600 / TOTAL FR;
+        5) 1FR = 300;
+        */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-rows: 200px 300px;
+        /* gap: 20px; */
+        column-gap: 10px;
+        row-gap: 40px;
       }
 
       .container--2 {
