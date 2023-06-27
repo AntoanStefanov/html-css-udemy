@@ -34,56 +34,12 @@
 
       .container {
         /* STARTER */
-        flex-wrap: wrap;
         font-family: sans-serif;
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
 
         /* FLEXBOX */
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 15px;
-      }
-
-      .el {
-        /* default values for these flex-item props */
-
-        /* can the flex box - grow, shrink. and what is the basis/base width/ */
-        /* flex-grow: 0; */ /*just filling up the rest of flexbox, if any space*/
-        /* flex-shrink: 1; */
-        /* flex-basis: auto; */
-
-        /* when we size(particularly with width) flex item,
-        we do not use the width prop, we use flex-basis. */
-        /* Let's say we want them to have 100px width each. */
-        /* flex-basis: 200px; */
-        /* flex-basis e bazov width, inache flexbox si smqta koe kolko. */
-        /* ako flex-shrink: 1;, ako nqma dostatuchno mqsto,
-        vupreki che basis e 200px, moje  da gi smukne i na po malko,
-        za da fit-ne container-a, ako dadesh flex-shrink: 0; ,
-        to vseki shte e min 200px, zaradi flex-basis i ima shans da ne fit-ne. */
-
-        /* always use the flex prop (grow, shrink, basis -> 0 0 200px) */
-        flex: 0 0 200px;
-      }
-
-      .el--1 {
-        align-self: flex-end;
-        /* that how u can arrange the items, its good for mobile displaying */
-        order: 2; /* It must be larger than the 1 in el--4, so that its at the end. */
-      }
-
-      .el--4 {
-        align-self: flex-start;
-        order: 1; /* -1->first 0->same place(default), 1->last */
-      }
-
-      .el--5 {
-        /* takes the height of the most tallest element.  el--3 =150px 
-        stretching it the most possible. */
-        align-self: stretch;
       }
     </style>
   </head>
